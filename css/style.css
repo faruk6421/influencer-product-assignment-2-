@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ------------
+-----common css------ */
+
+body{
+    font-family: poppins;
+}
+*{
+    margin:0;padding: 0;
+}
+/*--------------------
+------- header css----------- */
+header,main,main-bottom,.extra-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-title{
+    color: #3A3A3A;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.container{
+    width: 1000px;
+    margin-top: 21px;
+}
+.header-bottom{
+    display: flex;
+    margin: 35px 0px;
+}
+.header-bottom-left{
+    width: 580px;
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.influencer-title{
+    color: #3A3A3A;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.influencer-details{
+    font-size: 16px;
+    color: #3A3A3A;
+}
+.influencer-bottom{
+    margin-top: 35px;
+}
+.influence-button{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 12px;
+    background: #E02C6D;
+    color: white;
+    transition: 0.4s ease;
+}
+.influence-button:hover{
+    background: #28f06a;
+    color: rgb(5, 0, 0);
+}
+.header-bottom-right{
+    width: 400px;
+    
+}
+
+/* -------------
+---------main  part------------- */
+
+.collections{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.collection-head{
+    text-align: center;
+    color: #3A3A3A;
+    margin-bottom: 30px;
+}
+.collection{
+    padding: 10px;
+    box-shadow: 0 0 7px 5px #e5dede;
+    border: 2px solid #d9d7d7;
+}
+.collection-name{
+    color: #18191F;
+    font-size: 28px;
+    margin: 10px 0px;
+}
+.collection-details p{
+    margin: 5px 0px;
+    color: #787885;
+}
+.rating{
+    color:yellow;
+}
+/* main-bottom */
+.main-more{
+    text-decoration: none;
+    color: #E02C6D;
+    text-align: right;
+    display: inherit;
+}
+/* extra part----
+------- */
+    form {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 0px;
+    }
+    .form-header{
+        margin: 10px 0;
+        color: rgb(10, 7, 17);
+        font-weight: bold;
+    }
+    .form-item{
+        width: 400px;
+    padding: 6px;
+    font-size: 16px;
+    }
+    .submit-btn{
+        margin-top: 20px;
+
+    }
+    .submit{
+        text-decoration: none;
+    background: #E02C6D;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: .5s ease;
+    }
+    .submit:hover{
+        background-color: #28f06a;
+        color: black;
+    }
+/*-------- starting footer css---------
+--------*/
+.footer{
+    margin-top: 20px;
+    background: #0A0826;
+    text-align: center;
+    padding: 10px;
+    height: 180px;
+    color: white;
+
+}
+.footer a{
+    color: white;
+    padding: 9px;
+    background: #686666;
+    border-radius: 28px;
+    font-size: 20px;
+    margin: 6px;
+}
+.footer h2,p{
+    margin-bottom: 15px;
+}
+
+
+
+/*---------
+------- media quairy css- for mobile-------
+------ */
+
+@media only screen and (max-width:576px){
+    .header-title{
+        font-size: 16px;
+    }
+    .header-title,.influencer-title,.influencer-details,.influencer-bottom{
+        text-align: center;
+    }
+    .influencer-title{
+        font-size: 28px;
+       
+    }
+    .influencer-details{
+        font-size: 14px;
+    }
+   .header-bottom-left{
+       display: block;
+       width: 100%;
+   }
+   
+   .header-bottom{
+       display: grid;
+       grid-template-columns: 1fr;
+        grid-gap: 30px;
+   }
+    .container{
+        width: 100%;
+    }
+    
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .collection{
+        flex-direction: column;
+    align-items: center;
+    display: flex;
+    text-align: center;
+        
+    }
+} 
+
+/*---------
+------- media quairy css- for tablet-------
+------ */
+@media only screen and (min-width: 577px) and (max-width:768px){
+    .header-title{
+        font-size: 16px;
+    }
+    .header-title,.influencer-title,.influencer-details,.influencer-bottom{
+        text-align: center;
+    }
+    .header-bottom-left{
+        display: block;
+        width: 100%;
+    }
+    .header-bottom-right{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .header-bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+         grid-gap: 30px;
+    }
+    .container{
+        width: 100%;
+    }
+    
+    .collections{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .collection{
+        flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+        
+    }
+
+} 
+
